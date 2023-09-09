@@ -1,0 +1,36 @@
+.wrapper{
+    height:100px;
+    width:100%;
+    position: relative;
+    box-shadow: 0px 5px 4px 0px #00000040;
+
+}
+.list_ul{
+    display:flex;
+    gap: 20px;
+    list-style: none;
+}
+.list{
+    width:490px;
+    position: absolute;
+    left:420px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.logo{
+    position:absolute;
+    left:187px;
+}
+.list_item a{
+    color:black;
+}
+.list_item{
+    text-decoration: underline;
+}
+.auth{
+    position: absolute;
+    right:50px;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
