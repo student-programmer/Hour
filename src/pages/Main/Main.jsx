@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { createRef } from 'react';
 import m from './Main.module.css';
 import data from '../../api/data.json';
 import comment from '../../assets/image/comment.jpg';
+import comments from '../../assets/image/comments.png';
 import { Link } from 'react-router-dom';
- 
 
-const Main = () => {
+const Main = ({ ref }) => {
 	return (
 		<div className={m.wrapper}>
 			{/* <img src={banner} alt="banner" class/> */}
@@ -25,7 +25,7 @@ const Main = () => {
 			<div className={m.company}>
 				<p className={m.name_company}>О нашей компании</p>
 				<div className={m.company_div}>
-					<p className={m.text_company}>
+					<p className={m.text_company} id='about' ref={ref}>
 						О нас: Служба рекламы "ЧАСПИК" , выполняет заказы быстро и
 						профессионально. Обращаясь сюда, вы можете быть уверены в качестве
 						выполняемой работы. Узнать подробную информацию о полном перечне
@@ -46,6 +46,7 @@ const Main = () => {
 				</div>
 			</div>
 			<img src={comment} alt='' className={m.comment} />
+			<img src={comments} alt='' className={m.comments} />
 		</div>
 	);
 };

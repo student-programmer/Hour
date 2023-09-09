@@ -131,3 +131,44 @@
 	font-size: 29px;
 	color: black;
 }
+.auth2{
+	display: none;
+}
+@media (max-width: 395px){
+	.modalContent{
+		width:300px;
+		height:210px;
+	}
+	.main{
+		font-size:22px;
+		width:200px;
+	}
+	.auth2{
+		display:block;
+		position: absolute;
+		right:10px;
+		top:5px;
+	}
+	.auth{
+		display:none;
+	}
+	.login_text{
+		top:30px;
+		font-size:15px;
+		
+	}
+	.login{
+		width:250px;
+		height:20px;
+		top:60px;
+	}
+	.password{
+		width:250px;
+		height:20px;
+		top:110px;
+	}
+	.password_text{
+				top:80px;
+		font-size:15px;
+	}
+}

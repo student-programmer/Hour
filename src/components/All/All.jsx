@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import a from './All.module.css';
 import comment from '../../assets/image/comment.jpg';
+import comments from '../../assets/image/comments.png';
 import axios from 'axios';
 
 const All = ({ data }) => {
@@ -108,7 +109,8 @@ const All = ({ data }) => {
 					<img src={require(item.img)} alt='' className={a.main_img} />
 				))}
 			</div> */}
-							<img src={comment} alt='' className={a.com} />
+							<img id='com' src={comment} alt='' className={a.com} />
+							<img id='com' src={comments} alt='' className={a.coms} />
 						</div>
 				  ))}
 		</>

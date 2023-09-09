@@ -11,12 +11,21 @@ import Photo from './pages/Photo/Photo';
 import Right from './pages/Right/Right';
 import Width from './pages/Width/Width';
 import Trans from './pages/Trans/Trans';
+import { createRef, useRef } from 'react';
+import Price from './pages/Price/Price';
 function App() {
+	const ref = useRef()
+	const scrollEffect = targetRef => {
+		targetRef.current.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start',
+		});
+	};
   return (
 		<div className='App'>
-			<Header />
+			<Header ref={ref} scroll={scrollEffect} />
 			<Routes>
-				<Route exact path='/' element={<Main />} />
+				<Route exact path='/' element={<Main ref={ref} />} />
 				<Route path='/print' element={<Print />} />
 				<Route path='/advertising' element={<Advert />} />
 				<Route path='/internet' element={<Internet />} />
@@ -25,6 +34,7 @@ function App() {
 				<Route path='/right' element={<Right />} />
 				<Route path='/width' element={<Width />} />
 				<Route path='/trans' element={<Trans />} />
+				<Route path='/price' element={<Price/>} />
 			</Routes>
 			<Footer />
 		</div>

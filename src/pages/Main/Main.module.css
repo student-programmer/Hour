@@ -22,7 +22,7 @@
 	background-blend-mode: darken;
 	box-shadow: 10px 4px 4px 0px #00000040 inset;
 	border-radius: 20px;
-    position: relative;
+	position: relative;
 }
 
 .category {
@@ -43,9 +43,8 @@
 	line-height: 39px;
 	letter-spacing: 0em;
 	text-align: left;
-    position: absolute;
-    left:10px;
-
+	position: absolute;
+	left: 10px;
 }
 .item_description {
 	font-family: Inter;
@@ -55,10 +54,10 @@
 	letter-spacing: 0em;
 	text-align: left;
 	color: #ffffff;
-    list-style: inside;
-        position: absolute;
-    left:10px;
-    top:128px;
+	list-style: inside;
+	position: absolute;
+	left: 10px;
+	top: 128px;
 }
 
 .item_button {
@@ -77,63 +76,157 @@
 	text-align: left;
 	border-radius: 20px;
 	position: absolute;
-    left:50%;
-    transform: translateX(-50%);
-    top:320px;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 320px;
 }
-.company{
-    width:1065px;
-    height:563px;
-    position: relative;
-    left:50%;
-    transform: translateX(-50%);
-    top:200px;
-
-}
-
-.name_company{
-    font-family: Inter;
-font-size: 32px;
-font-weight: 400;
-line-height: 39px;
-letter-spacing: 0em;
-text-align: left;
-
-}
-.company_div{
-    width:1065px;
-    height:476px;
-    background: linear-gradient(90.25deg, #FF2E00 0.21%, #FF5C00 52.59%, #FF2E00 99.78%);
-    box-shadow: 10px 10px 4px 0px #00000040 inset;
-    border-radius: 20px;
-}
-.text_company{
-    font-family: Inter;
-font-size: 20px;
-font-weight: 400;
-line-height: 29px;
-letter-spacing: 0.01em;
-text-align: left;
-
-font-family: Inter;
-font-size: 20px;
-font-weight: 400;
-line-height: 29px;
-letter-spacing: 0em;
-text-align: left;
-color:white;
-position:absolute;
-left:15px;
-
+.company {
+	width: 1065px;
+	height: 563px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 200px;
 }
 
-.comment{
-    position:relative;
-    top:400px;
-    margin-bottom: 300px;
-    left:175px;
+.name_company {
+	font-family: Inter;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 39px;
+	letter-spacing: 0em;
+	text-align: left;
 }
- a{
-	color:black;
+.company_div {
+	width: 1065px;
+	height: 476px;
+	background: linear-gradient(
+		90.25deg,
+		#ff2e00 0.21%,
+		#ff5c00 52.59%,
+		#ff2e00 99.78%
+	);
+	box-shadow: 10px 10px 4px 0px #00000040 inset;
+	border-radius: 20px;
+}
+.text_company {
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 29px;
+	letter-spacing: 0.01em;
+	text-align: left;
+
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 29px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: white;
+	position: absolute;
+	left: 15px;
+}
+
+.comment {
+	position: relative;
+	top: 400px;
+	margin-bottom: 300px;
+	left: 175px;
+}
+.item_button a {
+	color: black;
 	text-decoration: none;
+}
+.comments{
+	display:none;
+}
+
+@media (max-width: 395px) {
+	.baner {
+		width: 393px;
+		height: 156px;
+		left: -10px;
+		position: relative;
+	}
+	.category {
+		width: 317px;
+		grid-template-columns: repeat(2, 148px);
+		gap: 18px;
+	}
+	.item {
+		width: 148px;
+		height: 118px;
+	}
+	.item_name {
+		font-family: Inter;
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 12px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+	.item_description {
+		font-family: Inter;
+		font-size: 8px;
+		font-weight: 400;
+		line-height: 10px;
+		letter-spacing: 0em;
+		text-align: left;
+		top: 40px;
+	}
+	.item_button {
+		width: 68px;
+		height: 13px;
+		border-radius: 20px;
+		top: 100px;
+		font-family: Inter;
+		font-size: 8px;
+		font-weight: 400;
+		line-height: 10px;
+		letter-spacing: 0em;
+		text-align: left;
+		background-color: #d9d9d9;
+	}
+	.company {
+		width: 314px;
+		height: 244px;
+		font-family: Inter;
+		font-size: 8px;
+		font-weight: 400;
+		line-height: 10px;
+		letter-spacing: 0.01em;
+		text-align: left;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.company_div {
+		width: 314px;
+		height: 244px;
+	}
+	.text_company {
+		font-family: Inter;
+		font-size: 8px;
+		font-weight: 400;
+		line-height: 10px;
+		letter-spacing: 0.01em;
+		text-align: left;
+		top: 50px;
+	}
+	.comment{
+		display: none;
+	}
+	.comments {
+		display: block;
+		position:absolute;
+		left: 35px;
+		bottom:50px;
+	}
+	.wrapper{
+		height:1600px;
+	}
+	.category{
+		top:100px;
+	}
 }

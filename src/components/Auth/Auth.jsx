@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import w from './Auth.module.css';
 import GlobalSvgSelector from '../../assets/icons/GlobalSvgSelector';
+import auth2 from '../../assets/image/auth2.png';
 
 const Auth = ({ toggleModal }) => {
 	const [login, setLogin] = useState('');
@@ -60,6 +61,10 @@ const Auth = ({ toggleModal }) => {
 				{warn && <p>Редактировать</p>}
 				<div className={w.auth}>
 					<GlobalSvgSelector id='login' />
+				</div>
+				<div className={w.auth2}>
+					{/* <GlobalSvgSelector id='login' /> */}
+					<img src={auth2} alt="" />
 				</div>
 
 				<p className={w.login_text}>Логин</p>
