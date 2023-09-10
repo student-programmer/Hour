@@ -170,3 +170,10 @@
 		height:3300px;
 	}
 }
+
+@media (min-width: 1440px) {
+	.com {
+		left: 50%;
+		transform: translateX(-90%);
+	}
+}

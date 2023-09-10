@@ -4,6 +4,13 @@
 	position: relative;
 	box-shadow: 0px 5px 4px 0px #00000040;
 }
+.wrapper2 {
+	height: 100px;
+	width: 1440px;
+	position: relative;
+	left:50%;
+	transform: translateX(-50%);
+}
 .list_ul {
 	display: flex;
 	gap: 20px;

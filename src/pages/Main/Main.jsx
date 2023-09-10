@@ -45,8 +45,8 @@ const Main = ({ ref }) => {
 					</p>
 				</div>
 			</div>
-			<img src={comment} alt='' className={m.comment} />
-			<img src={comments} alt='' className={m.comments} />
+			<img src={comment} alt='' className={m.comment} id='com'/>
+			<img src={comments} alt='' className={m.comments} id='com'/>
 		</div>
 	);
 };
