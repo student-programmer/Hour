@@ -166,3 +166,11 @@
 		height:700px;
 	}
 }
+
+@media (min-width: 1440px) {
+	.comment {
+		left: 50%;
+		transform: translateX(-90%);
+	}
+
+}
